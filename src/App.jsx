@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -11,17 +11,18 @@ function App() {
 	return (
 		<>
 			<h1>과제 : 이정재</h1>
-			<BrowserRouter>
+			<HashRouter>
 				<Routes>
-					<Route path="react-site" element={<Layout />} />
-					<Route index element={<Home />} />
-					<Route path="react-site/login" element={<Login />} />
-					<Route
-						path="react-site/day04_20250812"
-						element={<Day04_20250812 />}
-					/>
+					<Route path="/" element={<Layout />}>
+						<Route index element={<Home />} />
+						<Route path="login" element={<Login />} />
+						<Route
+							path="day04_20250812"
+							element={<Day04_20250812 />}
+						/>
+					</Route>
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</>
 	);
 }

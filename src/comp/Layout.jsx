@@ -7,15 +7,13 @@ function Layout() {
 			<nav>
 				<ul>
 					<li>
-						<Link to="/react-site/day04_20250812">
-							Day04 - 20250812
-						</Link>
+						<Link to="day04_20250812">Day04 - 20250812</Link>
 					</li>
 					<li>
-						<Link to="/react-site/">Home</Link>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/react-site/login">Login</Link>
+						<Link to="login">Login</Link>
 					</li>
 				</ul>
 			</nav>
