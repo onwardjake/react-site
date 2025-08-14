@@ -6,11 +6,14 @@ import Layout from './comp/Layout';
 import Home from './comp/Home';
 import Login from './comp/Login';
 import Day04_20250812 from './comp/Day04_20250812';
+import Day05_20250813 from './comp/Day05_20250813/Day05_20250813';
+import Day06_20250814 from './comp/day06_20250814/Day06_20250814';
 
 function App() {
 	return (
 		<>
 			<h1>과제 : 이정재</h1>
+			<hr />
 			<HashRouter>
 				<Routes>
 					<Route path="/" element={<Layout />}>
@@ -19,6 +22,14 @@ function App() {
 						<Route
 							path="day04_20250812"
 							element={<Day04_20250812 />}
+						/>
+						<Route
+							path="day05_20250813"
+							element={<Day05_20250813 />}
+						/>
+						<Route
+							path="day06_20250814"
+							element={<Day06_20250814 />}
 						/>
 					</Route>
 				</Routes>
