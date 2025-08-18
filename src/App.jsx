@@ -8,6 +8,7 @@ import Login from './comp/Login';
 import Day04_20250812 from './comp/Day04_20250812';
 import Day05_20250813 from './comp/Day05_20250813/Day05_20250813';
 import Day06_20250814 from './comp/day06_20250814/Day06_20250814';
+import Day07_20250818 from './comp/day07_20250818/Day07_20250818';
 
 function App() {
 	return (
@@ -30,6 +31,10 @@ function App() {
 						<Route
 							path="day06_20250814"
 							element={<Day06_20250814 />}
+						/>
+						<Route
+							path="day07_20250818"
+							element={<Day07_20250818 />}
 						/>
 					</Route>
 				</Routes>

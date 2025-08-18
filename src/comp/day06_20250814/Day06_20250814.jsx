@@ -19,7 +19,7 @@ const Day06_20250814 = () => {
 			<ExUseCallback03 />
 			<hr />
 			<p>UseRef - 카운터 시작/정지 시키기</p>
-			<ExUseRef02 />{' '}
+			<ExUseRef02 />
 		</>
 	);
 };
