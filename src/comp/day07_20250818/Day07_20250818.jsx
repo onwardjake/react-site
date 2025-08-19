@@ -6,11 +6,21 @@ import ExZustand01 from './ExZustand01';
 import { store_redux } from '../../js/store_redux';
 import { Provider } from 'react-redux';
 import ExReduxTool01 from './ExReduxTool01';
+import { useNavigate } from 'react-router-dom';
 
 const Day07_20250818 = () => {
+	const navigate = useNavigate();
+
 	return (
 		<>
 			<h2>React Day 07 20250818</h2>
+			<button
+				onClick={() => {
+					navigate('/');
+				}}
+			>
+				과제 Home으로 이동
+			</button>
 			<hr />
 			<p>UseContext</p>
 			<ExContextProvider>

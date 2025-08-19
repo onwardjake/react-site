@@ -10,11 +10,22 @@ import ExUseEffect05 from './Day04_20250812/useEffect/ExUseEffect05';
 import MyForm from './Day04_20250812/MyForm';
 import MyFormTextarea from './Day04_20250812/MyFormTextarea';
 import MyFormSelectbox from './Day04_20250812/MyFormSelectbox';
+import { useNavigate } from 'react-router-dom';
 
 export default function Day04_20250812() {
+	const navigate = useNavigate();
+
 	return (
 		<>
 			<h2>React Day 04 20250812</h2>
+			<button
+				onClick={() => {
+					navigate('/');
+				}}
+			>
+				과제 Home으로 이동
+			</button>
+			<hr />
 			<Counter />
 			<hr />
 			<p></p>

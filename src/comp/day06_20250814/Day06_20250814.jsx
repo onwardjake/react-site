@@ -3,11 +3,21 @@ import ExUseCallback01 from './ExUseCallback01';
 import ExUseCallback02 from './ExUseCallback02';
 import ExUseCallback03 from './ExUseCallback03';
 import ExUseRef02 from './ExUseRef02';
+import { useNavigate } from 'react-router-dom';
 
 const Day06_20250814 = () => {
+	const navigate = useNavigate();
+
 	return (
 		<>
 			<h2>React Day 06 20250814</h2>
+			<button
+				onClick={() => {
+					navigate('/');
+				}}
+			>
+				과제 Home으로 이동
+			</button>
 			<hr />
 			<p>UseCallback</p>
 			<ExUseCallback01 />

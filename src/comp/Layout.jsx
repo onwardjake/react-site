@@ -12,6 +12,10 @@ function Layout() {
 					</li>
 					<li>
 						{/* <Link> is used to set the URL and keep track of browsing history. */}
+						<Link to="day07_20250818">Day07 - 20250818</Link>
+					</li>
+					<li>
+						{/* <Link> is used to set the URL and keep track of browsing history. */}
 						<Link to="day06_20250814">Day06 - 20250814</Link>
 					</li>
 					<li>

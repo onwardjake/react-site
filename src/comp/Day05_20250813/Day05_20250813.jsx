@@ -4,13 +4,22 @@ import ExUseRef01 from './ExUseRef01';
 import ExUseMemo01 from './ExUseMemo01';
 import ExUseMemo02 from './ExUseMemo02';
 import ExUseReducer01 from './ExUseReducer01';
+import { useNavigate } from 'react-router-dom';
 
 const Day05_20250813 = () => {
+	const navigate = useNavigate();
+
 	return (
 		<>
 			<h2>React Day 05 20250813</h2>
-			<hr />
-			<p>UseContext</p>
+			<button
+				onClick={() => {
+					navigate('/');
+				}}
+			>
+				과제 Home으로 이동
+			</button>
+			<hr /> <p>UseContext</p>
 			<ExUseContext01 />
 			<hr />
 			<p>UseRef</p>
